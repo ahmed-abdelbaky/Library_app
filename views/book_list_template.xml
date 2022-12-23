@@ -1,0 +1,14 @@
+<odoo>
+    <template id="book_list_template" name="book list">
+        <div id="wrap" class="container">
+            <h1>Book</h1>
+            <t t-foreach="books" t-as="o">
+            <div class="row">
+                <span t-field="o.name"/>
+                <span t-field="o.published_id"/>
+                <span t-field="o.date_published"/>
+            </div>
+            </t>
+        </div>
+    </template>
+</odoo>
